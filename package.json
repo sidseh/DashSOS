@@ -1,0 +1,14 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "send emergency text",
+  "main": "twilio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "geo brito",
+  "license": "ISC",
+  "dependencies": {
+    "twilio": "^2.11.1"
+  }
+}

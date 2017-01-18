@@ -4,23 +4,23 @@ var client = require('twilio')('ACc5dcfd7386c6a8703808b867f4c347f1', 'f9e1ead06e
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Login' });
 });  
 
 
 
 /* GET home page. */
-router.get('/dash/', function(req, res, next) {
+/*router.get('/dash/', function(req, res, next) {
   res.render('dash', { title: 'Dash' });
-});
+});*/
 
-/* GET home page. */
+/* GET dash clicks. */
 router.get('/dash/', function(req, res, next) {
 
 	//Send an SMS text message
 client.sendMessage({
 
-    to:'+12018899783', // Any number Twilio can deliver to
+    to:'+16095050940', // Any number Twilio can deliver to
     from: '+8622363840', // A number you bought from Twilio and can use for outbound communication
     body: 'testing 123.' // body of the SMS message
 

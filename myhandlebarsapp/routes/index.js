@@ -7,20 +7,13 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });  
 
-
-
-/* GET home page. */
-router.get('/dash/', function(req, res, next) {
-  res.render('dash', { title: 'Dash' });
-});
-
 /* GET home page. */
 router.get('/dash/', function(req, res, next) {
 
 	//Send an SMS text message
 client.sendMessage({
 
-    to:'+12018899783', // Any number Twilio can deliver to
+    to:'+16095050940', // Any number Twilio can deliver to
     from: '+8622363840', // A number you bought from Twilio and can use for outbound communication
     body: 'testing 123.' // body of the SMS message
 

@@ -1,8 +1,8 @@
 // This may be confusing but here Sequelize (capital) references the standard library
-var sequelize = require("sequelize");
+var Sequelize = require("sequelize");
 
 // sequelize (lowercase) references my connection to the DB. You could name it something else, but I was just following their convention.
-var dbconnectionB = require("../dbconnections/dbconnectionB.js");
+var sequelize = require("../dbconnections/dbconnectionB.js");
 
 var medications = sequelize.define("medications", {
     id: {

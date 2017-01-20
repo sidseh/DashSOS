@@ -2,7 +2,7 @@
  var Sequelize = require("sequelize");
 
  // sequelize (lowercase) references my connection to the DB. You could name it something else, but I was just following their convention.
- var sequelize = require("../config/connection.js");
+ var sequelize = require("../dbconnections/dbconnectionC.js");
 
  var contacts = sequelize.define("contacts", {
      user_id: {
@@ -10,20 +10,16 @@
          allowNull: false,
 
      },
-     contact_id: {
+     cid: {
          type: Sequelize.INTEGER,
          allowNull: false,
          primaryKey: true
      },
-     first_name: {
+     cname: {
          type: Sequelize.STRING,
          allowNull: false
      },
-     last_name: {
-         type: Sequelize.STRING,
-         allowNull: false
-     },
-     phone: {
+     cphone: {
          type: Sequelize.INTEGER,
          allowNull: false
      }

@@ -1,0 +1,29 @@
+{
+  "name": "dash-sos",
+  "version": "1.0.0",
+  "description": "emergency response call using Amazon dash button",
+  "main": "TwilioLambda.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidseh/DashSOS.git"
+  },
+  "keywords": [
+    "911",
+    "emergency",
+    "\"emergency",
+    "response\"",
+    "medical",
+    "ambulance",
+    "EMT",
+    "alert"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidseh/DashSOS/issues"
+  },
+  "homepage": "https://github.com/sidseh/DashSOS#readme"
+}

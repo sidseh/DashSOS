@@ -14,4 +14,4 @@ var connection = mysql.createConnection({
 
 
 // Exports the connection for other files to use
-module.exports = dbconnectionA;
+module.exports = sequelize;

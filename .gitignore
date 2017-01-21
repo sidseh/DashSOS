@@ -11,4 +11,4 @@ npm-debug.log*
 *.tgz
 
 #node modules folder
-node_modules
+node_modules/*

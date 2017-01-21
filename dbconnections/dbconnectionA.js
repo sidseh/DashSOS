@@ -1,17 +1,19 @@
-var mysql = require('mysql');
-var host = "dashsos-a.c611opkzze4p.us-east-1.rds.amazonaws.com",
-    database = "dashsosA", 
-    user = "emergency",
-    password = "911Button",
-    port = 3306;
+var Sequelize = require('sequelize');
+var sequelize = new Sequelize ("dashsosA", "emergency", "911Button", {
+		host: "dashsos-a.c611opkzze4p.us-east-1.rds.amazonaws.com",
+		port: 3306,
+		dialect: 'mysql'
+	});
 
-var connection = mysql.createConnection({
-  host     : process.env.host,
-  user     : process.env.user,
-  password : process.env.password,
-  port     : process.env.port
-});
 
+sequelize.authenticate()
+    .then(function () {
+        console.log("CONNECTED! ");
+    })
+    .catch(function (err) {
+        console.log("SOMETHING DONE GOOFED");
+    })
+    .done();
 
 // Exports the connection for other files to use
 module.exports = sequelize;

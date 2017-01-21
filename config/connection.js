@@ -20,15 +20,6 @@ var sequelize = new Sequelize(process.env.JAWSDB_URL,
 
 });
 
-sequelize.authenticate()
-    .then(function () {
-        console.log("CONNECTED!");
-    })
-    .catch(function (err) {
-        console.log(err);
-    })
-    .done();
-
 
 // Exports the connection for other files to use
 module.exports = sequelize;

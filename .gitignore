@@ -5,7 +5,10 @@ npm-debug.log*
 
 
 # Optional npm cache directory
-.npm
+*.npm
 
 # Output of 'npm pack'
 *.tgz
+
+#node modules folder
+node_modules

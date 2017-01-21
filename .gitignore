@@ -1,0 +1,11 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz

@@ -5,20 +5,29 @@ var client = require('twilio')('ACc5dcfd7386c6a8703808b867f4c347f1', 'f9e1ead06e
 /* GET home page. */
 router.get('/', function(req, res, next) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   res.render('index', { title: 'Express' });
 =======
   res.render('index', { title: 'Login' });
 >>>>>>> 7bcff96992746382f228ee7828064ef9ec1b01b8
+=======
+  res.render('index', { title: 'Login' });
+>>>>>>> fgbm
 });  
 
 
 
 /* GET home page. */
 <<<<<<< HEAD
+<<<<<<< HEAD
 router.get('/dash/', function(req, res, next) {
+=======
+/*router.get('/dash/', function(req, res, next) {
+>>>>>>> fgbm
   res.render('dash', { title: 'Dash' });
-});
+});*/
 
+<<<<<<< HEAD
 /* GET home page. */
 =======
 /*router.get('/dash/', function(req, res, next) {
@@ -27,16 +36,23 @@ router.get('/dash/', function(req, res, next) {
 
 /* GET dash clicks. */
 >>>>>>> 7bcff96992746382f228ee7828064ef9ec1b01b8
+=======
+/* GET dash clicks. */
+>>>>>>> fgbm
 router.get('/dash/', function(req, res, next) {
 
 	//Send an SMS text message
 client.sendMessage({
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     to:'+12018899783', // Any number Twilio can deliver to
 =======
     to:'+16095050940', // Any number Twilio can deliver to
 >>>>>>> 7bcff96992746382f228ee7828064ef9ec1b01b8
+=======
+    to:'+16095050940', // Any number Twilio can deliver to
+>>>>>>> fgbm
     from: '+8622363840', // A number you bought from Twilio and can use for outbound communication
     body: 'testing 123.' // body of the SMS message
 

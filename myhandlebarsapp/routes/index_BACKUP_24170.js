@@ -7,12 +7,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });  
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 76a1d80c7e8cc23182d0acb3a59480c51b054158
 /* GET home page. */
 router.get('/dash/', function(req, res, next) {
 

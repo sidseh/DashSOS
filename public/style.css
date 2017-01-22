@@ -6,7 +6,8 @@ body {
 }
 
 html {
-	height: 950px;
+  	font-family: GillSans, Calibri, Trebuchet, sans-serif, Cormorant, Roboto, Arsenal;
+  	height: 950px;
 	width: 100%;
 }
 
@@ -19,6 +20,7 @@ html {
 }
 
 .head {
+	font-family: Cormorant;
 	color: white;
 	margin: 1px;
 	text-align: center;
@@ -41,6 +43,7 @@ div.box {
 
 form {
 	padding: 20px;
+	font-family: Arsenal;
 	
 }
 

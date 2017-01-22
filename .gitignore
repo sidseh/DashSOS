@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Optional npm cache directory
+*.npm
+
+# Output of 'npm pack'
+*.tgz
+
+#node modules folder
+node_modules/*
+
+#config.json storage locations
+db.development.*
+
+#unneeded working files
+routes/users.js
+models/task.js
+models/user.js

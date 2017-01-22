@@ -20,11 +20,9 @@ router.get('/dash/', function(req, res, next) {
 client.sendMessage({
 
     to:'+16095050940', // Any number Twilio can deliver to
-<<<<<<< HEAD
+    
     from: '+18622363840', // A number you bought from Twilio and can use for outbound communication
-=======
-    from: '+8622363840', // A number you bought from Twilio and can use for outbound communication
->>>>>>> 76a1d80c7e8cc23182d0acb3a59480c51b054158
+
     body: 'testing 123.' // body of the SMS message
 
 }, function(err, responseData) { //this function is executed when a response is received from Twilio

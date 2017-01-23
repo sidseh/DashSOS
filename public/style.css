@@ -11,6 +11,8 @@ html {
 	width: 100%;
 }
 
+
+/*++++++++++++++++++++++++++++Index.html+++++++++++++++++++++*/
 #wrapper {
 	width: 500px;
 	height: 60%;
@@ -83,6 +85,8 @@ input[type=email].validate+label {
  	background-color: #ef5350;
  	color: white;
  }
+
+ /*++++++++++++++++++++++++++++++++++End Index.html++++++++++++++++++++++++++*/
 
 
 

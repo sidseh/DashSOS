@@ -4,7 +4,7 @@ var Sequelize = require("sequelize");
  // sequelize (lowercase) references my connection to the DB. You could name it something else, but I was just following their convention.
 var sequelize = require("../config/connection.js");
 
-var medications = sequelize.define("medications", {
+var diseases = sequelize.define("diseases", {
     id: {
         type: Sequelize.INTEGER,
         allowNull: false,
@@ -14,7 +14,7 @@ var medications = sequelize.define("medications", {
         type: Sequelize.INTEGER,
         allowNull: false
     },
-    medication: {
+    disease: {
         type: Sequelize.STRING,
         allowNull: false
     }
@@ -22,5 +22,5 @@ var medications = sequelize.define("medications", {
     timestamps: false
 });
  // Sync with DB
-medications.sync();
-module.exports = medications;
+diseases.sync();
+module.exports = diseases;

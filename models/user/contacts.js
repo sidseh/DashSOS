@@ -5,26 +5,22 @@
  var sequelize = require("../config/connection.js");
 
  var contacts = sequelize.define("contacts", {
-     user_id: {
+     uid: {
          type: Sequelize.INTEGER,
          allowNull: false,
 
      },
-     contact_id: {
+     cid: {
          type: Sequelize.INTEGER,
          allowNull: false,
          primaryKey: true
      },
-     first_name: {
+     cname: {
          type: Sequelize.STRING,
          allowNull: false
      },
-     last_name: {
+    cphone: {
          type: Sequelize.STRING,
-         allowNull: false
-     },
-     phone: {
-         type: Sequelize.INTEGER,
          allowNull: false
      }
  }, {

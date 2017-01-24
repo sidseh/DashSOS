@@ -104,9 +104,12 @@ input[type=email].validate+label {
 }
 
  main {
-    flex: 1 0 auto;
+    flex: 7 0 auto;
   }
 
+footer {
+	height: 100%;
+}
 /*++++++++++++++++++++++++++++++++End About.html+++++++++++++++++++++++++++*/
 
 

@@ -14,6 +14,9 @@ connection.connect(function(err) {
         return;
     }
     console.log('connected as id ' + connection.threadId);
+    console.log('name: ' + req.body.magicName);
+    console.log('phone: ' + req.body.magicNumber);
+
 });
 
 

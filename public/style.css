@@ -1,8 +1,9 @@
 body {
-	background-image: url(../assets/red-faded-light-.jpg);
+	background-color: #FFFFFF;
 	background-size: cover;
 	height: auto;
 	width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -10,6 +11,8 @@ html {
 	width: 100%;
 }
 
+
+/*++++++++++++++++++++++++++++Index.html+++++++++++++++++++++*/
 #wrapper {
 	width: 500px;
 	height: 60%;
@@ -18,51 +21,54 @@ html {
 
 }
 
+a {
+	color: #ffffff;
+}
+
 .head {
-	color: white;
+	color: #333326;
 	margin: 1px;
 	text-align: center;
 }
 
 img {
-	height: 200px;
-	width: 220px;
+	height: 25%;
+	width: 25%;
 	padding: 0px;
 }
 
 div.box {
 	background: transparent;
 	border-width: 3px;
-	border-style: ridge;
+	border-style: hidden;
 	border-color: white;
 	padding: 15px;
-	box-shadow: 10px 10px;
+	box-shadow: 2px 3px 4px 2px  #e0e0a3;
 }
 
 form {
 	padding: 20px;
-	
 }
 
 input[type=text].validate+label {
-	color: black;
+	color: #333326;
 	font-size: 18px;
 	
 }
 
 input[type=password].validate+label {
-	color: black;
+	color: #333326;
 	font-size: 18px;
 }
 
 input[type=email].validate+label {
-	color: black;
+	color: #333326;
 	font-size: 18px;
 }
 
 /* label focus color */
  .input-field input:focus + label {
-   color: white !important;
+   color: #333326 !important;
    font-size: 10px;
  }
  /* label underline focus color */
@@ -72,13 +78,14 @@ input[type=email].validate+label {
  }
  #clear {
  	background-color: #ef5350;
- 	color: black;
+ 	color: white;
  }
 
  #register {
  	background-color: #ef5350;
- 	color: black;
+ 	color: white;
  }
 
+ /*++++++++++++++++++++++++++++++++++End Index.html++++++++++++++++++++++++++*/
 
 

@@ -1,37 +1,48 @@
 {
-  "name": "dashsos",
+  "name": "dash-sos",
   "version": "1.0.0",
-  "description": "amazon dash button hack",
-  "main": "server.js",
+  "description": "emergency response call using Amazon dash button",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "DEBUG=express-sequelize node ./bin/www",
+    "test": "npm run test-unit && npm run test-integration",
+    "test-unit": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/unit/*.test.js",
+    "test-integration": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/integration/*.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sidseh/DashSOS.git"
   },
+  "keywords": [
+    "911",
+    "emergency",
+    "\"emergency",
+    "response\"",
+    "medical",
+    "ambulance",
+    "EMT",
+    "alert"
+  ],
+
   "author": "siddhant, will, nathaniel, fausto",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sidseh/DashSOS/issues"
   },
-  "homepage": "https://github.com/sidseh/DashSOS#readme",
   "dependencies": {
-    "axios": "^0.15.3",
-    "babel-core": "^6.22.1",
-    "body-parser": "^1.16.0",
-    "express": "^4.14.0",
-    "morgan": "^1.7.0",
+    "aws-sdk": "2.7.27",
+    "body-parser": "1.16.0",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "morgan": "1.7.0",
     "mysql": "^2.12.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "path": "0.12.7",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.29.0",
+    "serve-favicon": "2.1.5",
+    "sqlite3": "3.1.8",
+    "twilio": "2.11.1"
   },
-   "devDependencies": {
-    "babel-core": "^6.3.13",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "webpack": "^1.13.1"
-  }
-}
+  "homepage": "https://github.com/sidseh/DashSOS#readme"
+

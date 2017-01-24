@@ -20,3 +20,4 @@ db.development.*
 routes/users.js
 models/task.js
 models/user.js
+UI_Templates/*

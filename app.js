@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/vitals', function(req, res) {
-    renpm s.render('anotherpage', {
+    res.render('anotherpage', {
         title: 'Home'
     });
 });

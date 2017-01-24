@@ -23,7 +23,8 @@
     "EMT",
     "alert"
   ],
-  "author": "",
+
+  "author": "siddhant, will, nathaniel, fausto",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sidseh/DashSOS/issues"
@@ -44,4 +45,4 @@
     "twilio": "2.11.1"
   },
   "homepage": "https://github.com/sidseh/DashSOS#readme"
-}
+

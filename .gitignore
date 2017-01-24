@@ -12,6 +12,7 @@ npm-debug.log*
 
 #node modules folder
 node_modules/*
+node_modules
 
 #config.json storage locations
 db.development.*
@@ -20,3 +21,4 @@ db.development.*
 routes/users.js
 models/task.js
 models/user.js
+

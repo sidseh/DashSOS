@@ -16,8 +16,9 @@
   "keywords": [
     "911",
     "emergency",
-    "\"emergency",
-    "response\"",
+    "emergency response",
+    "elder care",
+    "medical emergency",
     "medical",
     "ambulance",
     "EMT",
@@ -30,7 +31,6 @@
     "url": "https://github.com/sidseh/DashSOS/issues"
   },
   "dependencies": {
-    "aws-sdk": "2.7.27",
     "body-parser": "1.16.0",
     "cookie-parser": "1.4.3",
     "express": "4.14.0",
@@ -45,4 +45,4 @@
     "twilio": "2.11.1"
   },
   "homepage": "https://github.com/sidseh/DashSOS#readme"
-
+}

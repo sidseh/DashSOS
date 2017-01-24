@@ -20,6 +20,7 @@ app.get('/vitals', function(req, res) {
     res.render('anotherpage', {
         title: 'Home'
     });
+
 });
 
 app.get('/contacts', function(req, res){

@@ -8,12 +8,17 @@ body {
 	display: flex;
     min-height: 100vh;
     flex-direction: column;
+    max-height: 100vh;
   }
 
 html {
 	height: 950px;
 	width: 100%;
 }
+
+main {
+    flex: 1 0 auto;
+  }
 
 
 /*++++++++++++++++++++++++++++Index.html+++++++++++++++++++++*/
@@ -96,35 +101,19 @@ input[type=email].validate+label {
 
 /*++++++++++++++++++++++++++++++++Start About.html+++++++++++++++++++++++++++*/
 #aboutText {
-<<<<<<< HEAD
-=======
-
->>>>>>> fgbm
-	font-size: 3em;
+	font-size: 2em;
 }
 
 #imgTreat {
 	width: 30%;
 }
 
- main {
-    flex: 3 0 auto;
-<<<<<<< HEAD
-  }
 
   h1 {
   	font-weight: 900;
   }
 
 
-=======
-  }
-
-  h1 {
-  	font-weight: 900;
-  }
-
->>>>>>> fgbm
 /*++++++++++++++++++++++++++++++++End About.html+++++++++++++++++++++++++++*/
 
 

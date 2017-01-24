@@ -2,9 +2,12 @@
   "name": "dash-sos",
   "version": "1.0.0",
   "description": "emergency response call using Amazon dash button",
-  "main": "TwilioLambda.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "DEBUG=express-sequelize node ./bin/www",
+    "test": "npm run test-unit && npm run test-integration",
+    "test-unit": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/unit/*.test.js",
+    "test-integration": "cross-env NODE_ENV=test ./node_modules/.bin/mocha test/integration/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -25,13 +28,20 @@
   "bugs": {
     "url": "https://github.com/sidseh/DashSOS/issues"
   },
- "dependencies" :
-  { "aws-sdk" : "2.7.27",
-  	"mysql" : "2.12.0",
-  	"sequelize" : "3.29.0",
-  	"twilio" : "2.11.1",
-    "express": "4.14.0"
+  "dependencies": {
+    "aws-sdk": "2.7.27",
+    "body-parser": "1.16.0",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "morgan": "1.7.0",
+    "mysql": "^2.12.0",
+    "path": "0.12.7",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.29.0",
+    "serve-favicon": "2.1.5",
+    "sqlite3": "3.1.8",
+    "twilio": "2.11.1"
   },
   "homepage": "https://github.com/sidseh/DashSOS#readme"
 }
-

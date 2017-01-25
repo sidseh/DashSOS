@@ -4,6 +4,10 @@ body {
 	height: auto;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
+	/*footer*/
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 html {
@@ -87,6 +91,23 @@ input[type=email].validate+label {
  }
 
  /*++++++++++++++++++++++++++++++++++End Index.html++++++++++++++++++++++++++*/
+
+
+/*++++++++++++++++++++++++++++++++Start About.html+++++++++++++++++++++++++++*/
+#aboutText {
+	font-size: 3em;
+}
+
+#imgTreat {
+	width: 30%;
+}
+
+ main {
+    flex: 3 0 auto;
+  }
+
+/*++++++++++++++++++++++++++++++++End About.html+++++++++++++++++++++++++++*/
+
 
 
 

@@ -8,7 +8,7 @@ body {
 	display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
+  }
 
 html {
 	height: 950px;
@@ -90,6 +90,7 @@ input[type=email].validate+label {
  	color: white;
  }
 
+
  /*++++++++++++++++++++++++++++++++++End Index.html++++++++++++++++++++++++++*/
 
 
@@ -104,6 +105,10 @@ input[type=email].validate+label {
 
  main {
     flex: 3 0 auto;
+  }
+
+  h1 {
+  	font-weight: 900;
   }
 
 /*++++++++++++++++++++++++++++++++End About.html+++++++++++++++++++++++++++*/

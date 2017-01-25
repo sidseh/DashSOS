@@ -4,8 +4,8 @@
  // sequelize (lowercase) references my connection to the DB. You could name it something else, but I was just following their convention.
  var sequelize = require("../config/connection.js");
 
- var address = sequelize.define("address", {
-     user_id: {
+ var addresses = sequelize.define("address", {
+     uid: {
          type: Sequelize.INTEGER,
          allowNull: false,
          primaryKey: true
@@ -31,6 +31,6 @@
  });
 
  // Sync with DB
- address.sync();
+ addresses.sync();
 
- module.exports = address;
+ module.exports = addresses;

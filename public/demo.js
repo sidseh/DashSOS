@@ -1,4 +1,6 @@
-var magicButton = document.getElementById('magicButton');
+
+var http = require('http');
+var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var connection = mysql.createConnection({
     host: 'wgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
@@ -14,16 +16,8 @@ connection.connect(function(err) {
     console.log('connected as id ' + connection.threadId);
 });
 
-magicButton.onclick = function() {
-
-    var cname = document.getElementById("magicName").val();
-    var cphone = document.getElementById("magicNumber").val();
 
     connection.query('INSERT INTO contacts (uid, cname, phone) VALUES (1, ' + cname + ', ' + cphone + ')', function(error, results, fields) {
     	console.log(err);
 
     });
-
-
-
-};

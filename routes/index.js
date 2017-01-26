@@ -4,28 +4,12 @@ var router = express.Router();
 
 router.get('/', function (res) {
   'use strict'
-
-  models.demo.findAll({
-    include: [ models.Task ]
-  }).then(function(users) {
-    res.render('index', {
-      title: 'test',
-      users: users
-    });
+app.get('/vitals', function(req, res){
+  res.render('vitals', {
+    title: 'Vitals'
   });
 });
 
-router.get('/contacts', function (res) {
-  'use strict'
-
-  models.demo.findAll({
-    include: [ models.Task ]
-  }).then(function(users) {
-    res.render('contacts', {
-      title: 'test',
-      users: users
-    });
-  });
 });
 
 

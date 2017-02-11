@@ -96,10 +96,7 @@ input[type=email].validate+label {
 
 /*++++++++++++++++++++++++++++++++Start About.html+++++++++++++++++++++++++++*/
 #aboutText {
-<<<<<<< HEAD
-=======
 
->>>>>>> fgbm
 	font-size: 3em;
 }
 
@@ -109,7 +106,7 @@ input[type=email].validate+label {
 
  main {
     flex: 3 0 auto;
-<<<<<<< HEAD
+
   }
 
   h1 {
@@ -117,14 +114,7 @@ input[type=email].validate+label {
   }
 
 
-=======
-  }
 
-  h1 {
-  	font-weight: 900;
-  }
-
->>>>>>> fgbm
 /*++++++++++++++++++++++++++++++++End About.html+++++++++++++++++++++++++++*/
 
 

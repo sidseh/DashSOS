@@ -43,12 +43,12 @@ app.get('/about', function(req, res){
 });
 
 app.post('/contacts', function (req, res) {
-  var cname = req.body.magicName
-  var cphone = req.body.magicNumber
+  var cname = req.body.magicName;
+  var cphone = req.body.magicNumber;
+  res.send()
 })
 
 
-// app.listen(3000);
 
 
 app.listen(PORT);

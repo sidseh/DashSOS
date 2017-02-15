@@ -17,6 +17,11 @@ connection.connect(function(err) {
     console.log('name: ' + req.body.magicName);
     console.log('phone: ' + req.body.magicNumber);
 
+        connection.query('INSERT INTO contacts (uid, cname, phone) VALUES (1, ' + cname + ', ' + cphone + ')', function(error, results, fields) {
+    	console.log(err);
+
+    });
+
 });
 
 

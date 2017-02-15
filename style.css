@@ -103,9 +103,9 @@ input[type=email].validate+label {
 	width: 30%;
 }
 
- main {
+ /*main {
     flex: 3 0 auto;
-  }
+  }*/
 
   h1 {
   	font-weight: 900;

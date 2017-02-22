@@ -58,7 +58,7 @@ app.get('/vitals', function(req, res) {
 // });
 
 app.post('/contacts', function (req, res){
-  connection.query('INSERT INTO contacts (uid, cname, cphone) VALUES (?, ?, ?)', [1, req.body.magicName, magicNumber], function (err, result) {
+  connection.query('INSERT INTO contacts (uid, cname, phone) VALUES (?, ?, ?)', [1, req.body.magicName, req.body.magicNumber], function (err, result) {
     if (err) throw (err);
     res.redirect('./about');
     console.log(req.body.magicName);

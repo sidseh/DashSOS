@@ -3,20 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-
     <title>Vitals</title>
-
-    <link rel="stylesheet" type="text/css" href="./style.css">
-
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
     <!-- google font Raleway -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,900" rel="stylesheet">
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <!-- local stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,78 +19,69 @@
 <body>
     <div class="container" id="wrapper">
         <header>
-            <div class="row center">
-                <div class="col s12 m12 l12 center">
-                    <img src="./images/dashlogo.png" alt="logo">
-                </div>
             </div>
         </header>
         <main>
             <div class="row box">
-             <form action="/" method="post" class="col s12 m12 l12">
-                <h4 class="head">Vitals</h4>
-                <br>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="weight" type="text" class="validate" value="300lbs">
-                        <label for="email" data-error="wrong">Weight</label>
+                <form action="/" method="post" class="col s12 m12 l12">
+                    <h4 class="head">Vitals</h4>
+                    <br>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="weight" type="text" class="validate" value="300lbs">
+                            <label for="email" data-error="wrong">Weight</label>
+                        </div>
                     </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="weight" type="text" class="validate" value="6'7">
-                        <label for="email" data-error="wrong">Height</label>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="weight" type="text" class="validate" value="6'7">
+                            <label for="email" data-error="wrong">Height</label>
+                        </div>
                     </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="weight" type="text" class="validate" value="O+">
-                        <label for="email" data-error="wrong">Blood Type</label>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="weight" type="text" class="validate" value="O+">
+                            <label for="email" data-error="wrong">Blood Type</label>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="weight" type="text" class="validate" value="01/24/1940">
-                        <label for="birthdate" data-error="wrong">Birth Date</label>
+                    <br>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="weight" type="text" class="validate" value="01/24/1940">
+                            <label for="birthdate" data-error="wrong">Birth Date</label>
+                        </div>
                     </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="weight" type="text" class="validate" value="peanuts">
-                        <label for="allergies" data-error="wrong">Allergies</label>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="weight" type="text" class="validate" value="peanuts">
+                            <label for="allergies" data-error="wrong">Allergies</label>
+                        </div>
                     </div>
-                </div>
-                <div class="col s4 m4 l4">
-                    <div class="input-field inline">
-                        <input id="medications" type="text" class="validate" value="metformin, mdma">
-                        <label for="medications" data-error="wrong">Medications</label>
+                    <div class="col s4 m4 l4">
+                        <div class="input-field inline">
+                            <input id="medications" type="text" class="validate" value="metformin, warfarin">
+                            <label for="medications" data-error="wrong">Medications</label>
+                        </div>
                     </div>
-                </div>
             </div>
             </form>
             <br>
             <div class="row center">
                 <div class="col s6">
-                    <a class="waves-effect waves-light btn red darken-4" id="clear"><i class="material-icons left">cloud</i>Clear</a>
+                    <a class="btn red darken-4 z-depth-0" id="clear">Clear</a>
                 </div>
                 <div class="col s6">
-                    <a href="./contacts.html" class="waves-effect waves-light btn red darken-4" id="register"><i class="material-icons left">cloud</i>Next</a>
+                    <a href="./contacts.html" class="btn red darken-4 z-depth-0" id="register">Next</a>
                 </div>
             </div>
         </main>
     </div>
-
-
     <footer class="page-footer red darken-4">
     </footer>
-
     <!--Link to Jquery -->
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-
     <!-- All of our JS code will be transpiled into this bundle.js file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
     <script>
     $(document).ready(function() {
         Materialize.updateTextFields();

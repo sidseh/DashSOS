@@ -9,6 +9,7 @@ var sequelize = require("../config/connection.js");
 
 //////////////////////////////////////////////////////////////////////////////////
 
+var models = function () {
 //////////////////////////////////////////////////////
 ////////////////// USER //////////////////////////////
 /////////////////////////////////////////////////////
@@ -43,7 +44,6 @@ var sequelize = require("../config/connection.js");
  // Sync with DB
  addresses.sync();
 
- module.exports = addresses;
  //////////////////////////////////////////////////////
 
  //////////////// CONTACTS ////////////////////////////
@@ -73,11 +73,10 @@ var sequelize = require("../config/connection.js");
  // Sync with DB
  contacts.sync();
 
- module.exports = contacts;
- /////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////
 
  ////////////////// PHONE ///////////////////////////
-  var phone = sequelize.define("phone", {
+  var phones = sequelize.define("phones", {
      uid: {
          type: Sequelize.INTEGER,
          allowNull: false,
@@ -89,12 +88,11 @@ var sequelize = require("../config/connection.js");
      }
  }, {
      timestamps: false
- });
-
+ })
+;
  // Sync with DB
- phone.sync();
+ phones.sync();
 
- module.exports = phone;
 //////////////////////////////////////////////////////
 
 //////////////////// USERS ///////////////////////////
@@ -128,7 +126,6 @@ var users = sequelize.define("users", {
 // Sync with DB
 users.sync();
 
-module.exports = users;
 //////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////
@@ -160,7 +157,7 @@ var allergies = sequelize.define("allergies", {
 });
  // Sync with DB
 allergies.sync();
-module.exports = allergies;
+
 ///////////////////////////////////////////////////
 
 /////////////// DISEASEAS ///////////////////////////
@@ -183,7 +180,7 @@ var diseases = sequelize.define("diseases", {
 });
  // Sync with DB
 diseases.sync();
-module.exports = diseases;
+
 /////////////////////////////////////////////////////
 
 //////////// MEDICATIONS ////////////////////////////
@@ -206,7 +203,7 @@ var medications = sequelize.define("medications", {
 });
  // Sync with DB
 medications.sync();
-module.exports = medications;
+
 /////////////////////////////////////////////////////
 
 ////////////////// VITALS //////////////////////////
@@ -241,7 +238,7 @@ var vitals = sequelize.define("vitals", {
 });
 // Sync with DB
 vitals.sync();
-module.exports = vitals;
+
 /////////////////////////////////////////////////////
 /////////// END MEDICAL //////////////////////////////
 /////////////////////////////////////////////////////
@@ -264,8 +261,6 @@ var pwid = sequelize.define("pwid", {
 });
  // Sync with DB
 pwid.sync();
-module.exports = pwid;
-
 //////////////////////////////////////////////
 //////////////////////////////////////////////
 
@@ -284,7 +279,23 @@ var pw = sequelize.define("pw", {
 });
  // Sync with DB
 pw.sync();
-module.exports = pw;
+
 ///////////////////////////////////////////////
-// END ////////////////////////////////////////
+// END  CREDENTIALS////////////////////////////
 ///////////////////////////////////////////////
+
+return {
+    addresses: addresses,
+    contacts: contacts,
+    phones: phones,
+    users: users,
+    allergies: allergies,
+    diseases: diseases,
+    medications: medications,
+    vitals: vitals,
+    pwid: pwid, 
+    pw: pw
+}
+} ();
+
+module.exports = models;

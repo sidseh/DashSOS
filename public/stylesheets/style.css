@@ -16,8 +16,9 @@ html {
 }
 /*++++++++++++++++++++logo style+++++++++++++++++++++++++++*/
 #logo {
-	height: 10px;
-	width: auto;
+	height: 30%;
+	width: 30%;
+	float: left;
 }
 /*+++++++++++++++++++++++flat buttons+++++++++++++++++++++++++*/
 .z-depth-0 {
@@ -106,7 +107,8 @@ input[type=email].validate+label {
 
 /*++++++++++++++++++++++++++++++++Start About.html+++++++++++++++++++++++++++*/
 #textAbout {
-	font-size: 3em;
+	font-size: 25px;
+	float: right;
 }
 
 #imgTreat {

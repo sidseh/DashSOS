@@ -27,8 +27,8 @@ connection.connect(function (err) {
   console.log('connected as id ' + connection.threadId);
 });
 
-// app.engine('html', require('ejs').renderFile);
-// app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -45,24 +45,10 @@ app.get('/vitals', function(req, res) {
 
 });
 
-// app.get('/contacts/create', function(req, res){
-//   res.render('anotherpage', {
-//     title: 'Home'
-//   });
-// });
 
-// app.get('/contacts/:id', function(req, res){
-//   res.render('anotherpage', {
-//     title: 'Home'
-//   });
-// });
-
-app.post('/contacts', function (req, res){
-  connection.query('INSERT INTO contacts (uid, cname, phone) VALUES (?, ?, ?)', [1, req.body.magicName, req.body.magicNumber], function (err, result) {
-    if (err) throw (err);
-    res.redirect('./about');
-    console.log(req.body.magicName);
-    console.log(req.body.magicNumber);
+app.get('/contacts', function(req, res){
+  res.render('anotherpage', {
+    title: 'Home'
   });
 });
 
@@ -71,6 +57,23 @@ app.get('/about', function(req, res){
     title: 'Home'
   });
 });
+
+// app.get('/contacts/:id', function(req, res){
+//   res.render('anotherpage', {
+//     title: 'Home'
+//   });
+// });
+
+// app.post('/contacts', function (req, res){
+//   connection.query('INSERT INTO contacts (uid, cname, phone) VALUES (?, ?, ?)', [1, req.body.magicName, req.body.magicNumber], function (err, result) {
+//     if (err) throw (err);
+//     // res.redirect('./about');
+//     console.log(req.body.magicName);
+//     console.log(req.body.magicNumber);
+//   });
+// });
+
+
 
 // app.post('/contacts', function (req, res) {
 //   var cname = req.body.magicName;

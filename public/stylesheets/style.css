@@ -10,14 +10,23 @@ body {
     flex-direction: column;
   }
 
+li {
+	font-size: 50px;
+	float: left;
+	padding: 20px;
+	margin: 20px;
+}
+
+
 html {
 	height: 950px;
 	width: 100%;
 }
 /*++++++++++++++++++++logo style+++++++++++++++++++++++++++*/
 #logo {
-	height: 10%;
-	width: 10%;
+	height: 20%;
+	width: 20%;
+	float: left;
 }
 /*+++++++++++++++++++++++flat buttons+++++++++++++++++++++++++*/
 .z-depth-0 {
@@ -106,11 +115,12 @@ input[type=email].validate+label {
 
 /*++++++++++++++++++++++++++++++++Start About.html+++++++++++++++++++++++++++*/
 #textAbout {
-	font-size: 3em;
+	font-size: 25px;
+	float: right;
 }
 
 #imgTreat {
-	width: 30%;
+	width: 20%;
 }
 
  /*main {
